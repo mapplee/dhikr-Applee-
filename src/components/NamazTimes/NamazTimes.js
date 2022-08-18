@@ -38,7 +38,7 @@ const NamazTimes = () => {
         post[roundedTime - 1] =
             <li key={name}>
                 <b>{name}</b> {getFormattedTime(hour, minute)}
-                <span> {hour > 12 ? "pm" : "am"}</span>
+                <span> {hour >= 12 ? "pm" : "am"}</span>
             </li>;
     };
 
